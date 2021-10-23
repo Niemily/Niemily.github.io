@@ -1,0 +1,146 @@
+html {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 20px;
+    background-color: #756183;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px rgb(197, 146, 146);
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px rgb(197, 146, 146);
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px rgb(197, 146, 146);
+}
+
+ul,ol {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 650px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+    border: 5px solid rgba(0, 0, 0, 0.548);
+  
+}
+
+
+  img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+  }
+  
+     
+    #menu {
+      width:400px;
+      margin:0 auto;
+      padding:0;
+      list-style-type:none;
+      background-color:#FDF;
+    }
+
+   
+    #menu:after {
+      content:'';
+      display:block;
+      clear:both;
+    }
+
+    
+    #menu > li {
+      float:left;
+    }
+
+  
+    #menu > li:first-child {
+      background-color:red;
+      width:30%;
+    }
+
+  
+    #menu > li:first-child + li {
+      background-color:green;
+      width:40%;
+    }
+
+    
+    #menu > li:first-child + li + li {
+      background-color:blue;
+      width:30%;
+    }
+
+    
+    #menu > li > a {
+      display:block;
+      padding:15px;
+      text-decoration:none;
+      text-align:center;
+      color:#000;
+      background-color:#DDD;
+      box-shadow:0 0 0 1px #FFF inset;
+      background-image:linear-gradient(#FFF 0%, #EEE 30%, #DDD 70%, #FFF 100%);
+    }
+
+    
+    #menu > li:hover > a {
+      color:#00F;
+      background-color:#FFF;
+      background-image:none;
+    }
+    input[id^="spoiler"]{
+        display: none;
+       }
+       input[id^="spoiler"] + label {
+         display: block;
+         width: 200px;
+         margin: 0 auto;
+         padding: 5px 20px;
+         background: rgba(134, 98, 167, 0.322);
+         color: #fff;
+         text-align: center;
+         font-size: 24px;
+         border-radius: 8px;
+         cursor: pointer;
+         transition: all .6s;
+       }
+       input[id^="spoiler"]:checked + label {
+         color: #333;
+         background: #ccc;
+       }
+       input[id^="spoiler"] ~ .spoiler {
+         width: 90%;
+         height: 0;
+         overflow: hidden;
+         opacity: 0;
+         margin: 10px auto 0; 
+         padding: 10px; 
+         background: #eee;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         transition: all .6s;
+       }
+       input[id^="spoiler"]:checked + label + .spoiler{
+         height: auto;
+         opacity: 1;
+         padding: 10px;
+       }
+       
